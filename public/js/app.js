@@ -1,5 +1,4 @@
 const weatherUrl = 'http://localhost:3000/weather?'
-
 const searchForm = document.getElementById('searchForm')
 const country = document.getElementById('ctry')
 const city = document.getElementById('city')
