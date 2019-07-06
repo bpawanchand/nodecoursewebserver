@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+    {{!-- <script src="/js/app.js"></script> --}}
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather!</p>
+        <form id="searchForm">
+            <div>
+                <input id="ctry" placeholder="Country" value="India">
+                <input id="city" placeholder="City">
+                <button id="search" event="submit">Search</button>
+            </div>
+        </form>
+         <p id="err"></p>
+         <p id="lat"></p>
+         <p id="lon"></p>
+         <p id="frc"></p>
+         <p id="rain"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
