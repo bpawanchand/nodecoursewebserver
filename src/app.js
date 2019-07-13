@@ -9,7 +9,7 @@ const publicDir = path.join(__dirname, '../public')
 const templates = path.join(__dirname, '../templates/views')
 const partials = path.join(__dirname, '../templates/partials')
 
-
+const port  = process.env.PORT || 3000
 // console.log(__dirname)
 // console.log(__filename)
 // console.log(path.join(__dirname, '../public'))
@@ -94,8 +94,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, app.com, () => {
-    console.log('Server is listening to port 3000...')
+app.listen(port, app.com, () => {
+    console.log('Server is listening to port' + port + '....')
 })
 
 /* app.get('/help', (req, res) => {

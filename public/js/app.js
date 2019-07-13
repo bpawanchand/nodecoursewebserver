@@ -11,7 +11,8 @@ const err = document.getElementById('err')
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
-    const fullUrl = weatherUrl + 'country=' + country.value + '&city=' + city.value
+    // const fullUrl = weatherUrl + 'country=' + country.value + '&city=' + city.value
+    const fullUrl = '/weather?' + 'country=' + country.value + '&city=' + city.value
     fetch(fullUrl).then((response) => {
         response.json().then((data) => {
             if (data.Error) {
